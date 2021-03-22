@@ -36,6 +36,7 @@ body {
 /* Tags Section */
 body {
     font-size: 1rem;
+    background-color: var(--light-gray);
 }
 
 
@@ -52,6 +53,10 @@ transform: translate(-50%, -50%);
 .grid-container {
   display: grid;
   margin: 0 auto;
+  border-radius: 0.4375rem ;
+  background-color: white;
+  box-shadow: 0px 15px 30px 0px rgba(0,81,171,0.15);
+  overflow: hidden;
   max-width: 19.4375rem;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -62,9 +67,25 @@ transform: translate(-50%, -50%);
     "why-us"
 }
 
-.join{ grid-area: join; }
-.monthly { grid-area: monthly; }
-.why-us { grid-area: why-us; }
+.join{ 
+    grid-area: join; 
+}
+
+.monthly { 
+    grid-area: monthly;
+    background-color: var(--cyan);
+    color: white;
+}
+
+.why-us { 
+    grid-area: why-us;
+    background-color: var(--cyan);
+    opacity: 0.80;
+    color: white;
+
+}
+
+
 
 
 /* Media Query for Desktop */
