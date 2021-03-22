@@ -40,7 +40,6 @@ body {
 }
 
 
-
 /* Main Section */
 
 .main__wrapper {
@@ -58,6 +57,7 @@ transform: translate(-50%, -50%);
   box-shadow: 0px 15px 30px 0px rgba(0,81,171,0.15);
   overflow: hidden;
   max-width: 19.4375rem;
+  max-height: 45.125rem;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 0px 0px;
@@ -82,11 +82,7 @@ transform: translate(-50%, -50%);
     background-color: var(--cyan);
     opacity: 0.80;
     color: white;
-
 }
-
-
-
 
 /* Media Query for Desktop */
 @media (min-width: 69rem) {
