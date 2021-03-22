@@ -58,3 +58,19 @@ body {
 .join{ grid-area: join; }
 .monthly { grid-area: monthly; }
 .why-us { grid-area: why-us; }
+
+
+/* Media Query for Desktop */
+@media (min-width: 69rem) {
+
+ .grid-container {
+  margin: 0 auto;
+  max-width: 39.6875rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "join join"
+    "monthly why-us"
+    }
+}
