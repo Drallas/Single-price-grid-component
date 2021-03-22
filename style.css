@@ -41,3 +41,20 @@ body {
 
 
 /* Main Section */
+
+.grid-container {
+  display: grid;
+  margin: 0 auto;
+  max-width: 19.4375rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "join"
+    "monthly"
+    "why-us"
+}
+
+.join{ grid-area: join; }
+.monthly { grid-area: monthly; }
+.why-us { grid-area: why-us; }
