@@ -14,7 +14,6 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 
 
@@ -32,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub](https://github.com/Drallas/Single-price-grid-component)
+- Live Site URL: [GitHub Pages](https://drallas.github.io/Single-price-grid-component/)
 
 ## My process
 
@@ -46,26 +45,41 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+This time I didn't use a grid generator but coded it up myself from scratch, including a nice subtle box-shadow. 
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
+```css
+.grid-container {
+  display: grid;
+  margin: 0 auto;
+  border-radius: 0.4375rem 0.4375rem 0 0;
+  background-color: white;
+  box-shadow: 0px 15px 30px 0px rgba(0, 81, 171, 0.15);
+  width: 19.4375rem;
+  max-height: 45.125rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "join"
+    "monthly"
+    "why-us";
+}
 ```
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+This is a component and i'm getting a bit more confident that i can make it. What i'm still doubting about is should i set the width fixed or let the companent shrink / grow on window resize. How do i determine this? For now it's set fixed, but i'm curious how this is professionaly solved.  
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+To create a nice box-showdow I 'cheated' using a generator to accomplisha nice box shadow.
+
+- [Box-Shadow Generator](https://html-css-js.com/css/generator/box-shadow/) 
+
+- [CSS Box-Shadow](https://cssboxshadow.com/) 
 
 ## Author
 
 - Frontend Mentor - [@Drallas](https://www.frontendmentor.io/profile/Drallas)
 - Dev.to - [@Drallas](https://dev.to/drallas)
 
-## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
