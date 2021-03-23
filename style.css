@@ -46,7 +46,6 @@ body {
 
 .main__wrapper {
   display: grid;
-  grid-template-columns: 1fr;
   grid-template-rows: 100vh;
   align-items: center;
   justify-items: center; 
@@ -58,10 +57,8 @@ body {
   border-radius: 0.4375rem 0.4375rem 0 0;
   background-color: white;
   box-shadow: 0px 15px 30px 0px rgba(0, 81, 171, 0.15);
-  max-width: 19.4375rem;
-  max-height: 45.125rem;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 19.4375rem;
+  grid-template-rows: 16.625rem 14.25rem 14.25rem;
   gap: 0px 0px;
   grid-template-areas:
     "join"
@@ -72,7 +69,6 @@ body {
 /* Cards Section */
 .join {
   grid-area: join;
-  
 }
 
 .join__header {
@@ -184,18 +180,12 @@ body {
 
   .grid-container {
     margin: 0 auto;
-    max-height: 475px;
-    max-width: 39.6875rem;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 19.84375rem 19.84375rem;
+    grid-template-rows: 13.5rem 16.1875rem;
     gap: 0px 0px;
     grid-template-areas:
       "join join"
       "monthly why-us";
-  }
-
-  .join {
-      max-height: 216px;
   }
 
   .join__header {
@@ -219,7 +209,7 @@ body {
 }
 
   .monthly {
-    height: 259px;
+    min-height: 259px;
   }
 
   .monthly__header {
@@ -239,7 +229,7 @@ body {
   }
 
   .why-us {
-    height: 259px;
+    min-height: 259px;
   }
 
   .why-us__header {
@@ -248,7 +238,6 @@ body {
 
   .why-us__text {
       margin: 0 5rem 0 2.5rem;
-      
   }
 
 }
