@@ -22,6 +22,7 @@ html {
 }
 
 body {
+  font-family: var(--Karla);
   margin: 0;
   padding: 0;
   font-size: 100%;
@@ -41,13 +42,6 @@ body {
   background-color: var(--light-gray);
 }
 
-h1,
-h2 {
-  display: inline-block;
-}
-
-
-
 /* Main Section */
 
 .main__wrapper {
@@ -60,10 +54,10 @@ h2 {
 .grid-container {
   display: grid;
   margin: 0 auto;
-  border-radius: 0.4375rem;
+  border-radius: 0.4375rem 0.4375rem 0 0;
   background-color: white;
   box-shadow: 0px 15px 30px 0px rgba(0, 81, 171, 0.15);
-  max-width: 19.4375rem;
+  width: 19.4375rem;
   max-height: 45.125rem;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -74,28 +68,113 @@ h2 {
     "why-us";
 }
 
+/* Cards Section */
 .join {
   grid-area: join;
 }
 
+.join__header {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--cyan);
+  margin: 1.33rem 1.5rem 1.33rem 1.5rem;
+}
+
+.join__sub__header {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: var(--bright-yellow);
+  margin: 0 1.4rem 1.625rem 1.5rem;
+}
+
+.join__text {
+  color: var(--grayish-blue);
+  font-size: 0.875rem;
+  font-weight: 400;
+  letter-spacing: 0.01625rem;
+  line-height: 1.8;
+  margin: 0 1.4rem 2rem 1.5rem;
+}
+
 .monthly {
   grid-area: monthly;
+  height: 228px;
   background-color: var(--cyan);
   color: white;
+}
+
+.monthly__header {
+  font-size: 1.125rem;
+  font-weight: 400;
+  letter-spacing: 0.22px;
+  margin: 1.6875rem 0 1rem 1.5rem;
+}
+
+.monthly__subheader {
+  font-size: 1rem;
+  color: hsla(0, 0%, 100%, 0.5);
+  margin: 0rem 0 0.3rem 1.5rem;
+}
+
+.monthly__subheader span {
+  font-size: 2rem;
+  color: hsl(0, 0%, 100%);
+  margin: 0rem 0.3rem 0 0;
+}
+
+.monthly__text {
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  margin: 0 0rem 1.3rem 1.5rem;
+  opacity: 0.75;
+}
+
+.monthly__button {
+  display: block;
+  margin: auto auto;
+  width: 16.4375rem;
+  height: 3rem;
+  background-color: var(--bright-yellow);
+  border-radius: 5px;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
+  transition: all ease-in-out;
+}
+
+.monthly__button:hover {
+  opacity: 0.8;
 }
 
 .why-us {
   grid-area: why-us;
   background-color: var(--cyan);
+  height: 228px;
   opacity: 0.8;
   color: white;
+}
+
+.why-us__header {
+  font-size: 1.125rem;
+  margin: 1.75rem 1.5rem 1.375rem 1.5rem;
+}
+
+.why-us__text {
+  font-size: 0.875rem;
+  font-weight: 400;
+  letter-spacing: 0.01625rem;
+  line-height: 1.6;
+  margin: 0 5rem 1.5625rem 1.5rem;
+  opacity: 0.75;
 }
 
 /* Media Query for Desktop */
 @media (min-width: 69rem) {
   .grid-container {
     margin: 0 auto;
-    max-width: 39.6875rem;
+    height: 475px;
+    width: 39.6875rem;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 0px 0px;
@@ -103,6 +182,64 @@ h2 {
       "join join"
       "monthly why-us";
   }
+
+  .join {
+      max-height: 216px;
+  }
+
+  .join__header {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 2.2rem 0rem 1.125rem 2.4375rem;
+  }
+
+  .join__sub__header {
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin: 0rem 0rem 1.125rem 2.4375rem;
+  }
+
+  .join__text {
+    margin: 0 2.5rem 2.75rem;
+    font-size: 1rem;  
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    opacity: 0.7;
+}
+
+  .monthly {
+    height: 259px;
+  }
+
+  .monthly__header {
+      margin: 2.6875rem 0 1rem 2.6245rem;
+  }
+
+  .monthly__subheader {
+      margin: 0 0 .5rem 2.6245rem;
+  }
+
+  .monthly__text {
+      margin: 0 0 1.5rem 2.6245rem;
+  }
+
+  .monthly__button {
+      width: 14.8125rem;
+  }
+
+  .why-us {
+    height: 259px;
+  }
+
+  .why-us__header {
+    margin: 2.6875rem 0 1.5rem 2.5rem;
+  }
+
+  .why-us__text {
+      margin: 0 5rem 0 2.5rem;
+      
+  }
+
 }
 
 /* Attribution */
