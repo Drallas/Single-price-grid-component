@@ -45,10 +45,11 @@ body {
 /* Main Section */
 
 .main__wrapper {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100vh;
+  align-items: center;
+  justify-items: center; 
 }
 
 .grid-container {
@@ -57,7 +58,7 @@ body {
   border-radius: 0.4375rem 0.4375rem 0 0;
   background-color: white;
   box-shadow: 0px 15px 30px 0px rgba(0, 81, 171, 0.15);
-  width: 19.4375rem;
+  max-width: 19.4375rem;
   max-height: 45.125rem;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -130,7 +131,7 @@ body {
 }
 
 .monthly__text {
-    display: inline-block;
+  display: inline-block;
   font-size: 1rem;
   font-weight: 400;
   letter-spacing: 0.2px;
@@ -141,8 +142,8 @@ body {
 .monthly__button {
   display: block;
   margin: auto auto;
-  width: 16.4375rem;
-  height: 3rem;
+  max-width: 16.4375rem;
+  max-height: 3rem;
   background-color: var(--bright-yellow);
   border-radius: 5px;
   text-align: center;
@@ -180,10 +181,11 @@ body {
 
 /* Media Query for Desktop */
 @media (min-width: 69rem) {
+
   .grid-container {
     margin: 0 auto;
-    height: 475px;
-    width: 39.6875rem;
+    max-height: 475px;
+    max-width: 39.6875rem;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 0px 0px;
