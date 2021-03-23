@@ -71,9 +71,11 @@ body {
 /* Cards Section */
 .join {
   grid-area: join;
+  
 }
 
 .join__header {
+  display: inline-block;
   font-size: 1.25rem;
   font-weight: 400;
   color: var(--cyan);
@@ -81,6 +83,7 @@ body {
 }
 
 .join__sub__header {
+  display: inline-block;
   font-size: 0.9375rem;
   font-weight: 700;
   color: var(--bright-yellow);
@@ -104,30 +107,35 @@ body {
 }
 
 .monthly__header {
+  display: inline-block;
   font-size: 1.125rem;
-  font-weight: 400;
+  font-weight: 700;
   letter-spacing: 0.22px;
   margin: 1.6875rem 0 1rem 1.5rem;
 }
 
 .monthly__subheader {
+    display: inline-block;
   font-size: 1rem;
   color: hsla(0, 0%, 100%, 0.5);
   margin: 0rem 0 0.3rem 1.5rem;
+  padding-bottom: 1px;
 }
 
 .monthly__subheader span {
   font-size: 2rem;
   color: hsl(0, 0%, 100%);
   margin: 0rem 0.3rem 0 0;
+  padding-top: 1px;
 }
 
 .monthly__text {
+    display: inline-block;
   font-size: 1rem;
   font-weight: 400;
   letter-spacing: 0.2px;
   margin: 0 0rem 1.3rem 1.5rem;
-  opacity: 0.75;
+
 }
 
 .monthly__button {
@@ -151,11 +159,12 @@ body {
   grid-area: why-us;
   background-color: var(--cyan);
   height: 228px;
-  opacity: 0.8;
   color: white;
+  opacity: 0.75;
 }
 
 .why-us__header {
+  display: inline-block;
   font-size: 1.125rem;
   margin: 1.75rem 1.5rem 1.375rem 1.5rem;
 }
@@ -190,13 +199,13 @@ body {
   .join__header {
     font-size: 1.5rem;
     font-weight: 700;
-    margin: 2.2rem 0rem 1.125rem 2.4375rem;
+    margin: 2.8rem 0rem 1.125rem 2.4375rem;
   }
 
   .join__sub__header {
     font-size: 1.125rem;
     font-weight: 700;
-    margin: 0rem 0rem 1.125rem 2.4375rem;
+    margin: 0rem 0rem 1rem 2.4375rem;
   }
 
   .join__text {
