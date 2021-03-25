@@ -20,6 +20,8 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
 
 ## Overview
 
+Coding Time : 7 hrs 26 mins
+
 ### The challenge
 
 Users should be able to:
