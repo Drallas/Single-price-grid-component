@@ -14,6 +14,7 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
 
 
@@ -83,3 +84,5 @@ To create a nice box-showdow I 'cheated' using a generator to accomplisha nice b
 - Dev.to - [@Drallas](https://dev.to/drallas)
 
 
+## Acknowledgments
+Thanks to mentor Grace from Frontend Mentor to push me to refine the grid, avoid absolute values.
